@@ -167,7 +167,7 @@ nav {
   height: auto;
 }
 
-@media screen (max-width: 767px) {
+@media (max-width: 767px) {
   .photo-gallery {
     display: none;
   }
@@ -201,6 +201,12 @@ nav {
   max-height: 1800px;
   overflow: scroll;
   box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .content {
+    width: 100%;
+  }
 }
 
 /* SECTION - MAIN TITLE *******************************************************/
