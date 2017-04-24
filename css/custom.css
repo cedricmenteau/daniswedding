@@ -1,15 +1,225 @@
+body::after {
+  content: "";
+  position: absolute;
+  background-image: url('../images/background_white.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 1800px;
+  z-index: -1;
+  opacity: 0.35;
+}
+
 h1 {
   font-family: 'Rochester', cursive;
+  margin: 30px 0;
+  font-size: 4em;
+  font-style: italic;
+  text-align: center;
+}
+
+h1 i {
+  position: relative;
+  height: 100%;
+}
+
+h1 i::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 80px);
+  width: 40px;
+  height: 1px;
+  background-color: black;
+}
+
+h1 i::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 45px);
+  width: 40px;
+  height: 1px;
+  background-color: black;
 }
 
 h2 {
   font-family: 'Rye', cursive;
+  margin-bottom: 1em;
+  font-size: 3.2rem;
 }
 
 h3 {
   font-family: 'Rye', cursive;
+  font-size: 1.6em;
 }
 
-p {
+p, span, label {
   font-family: 'Sanchez', serif;
+}
+
+p i {
+  font-weight: 900;
+  font-style: normal;
+}
+
+strong {
+  text-transform: uppercase;
+}
+
+textarea {
+  width: 80%;
+  height: 180px;
+}
+
+input, select {
+  margin-bottom: 30px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 10px 0 60px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+li {
+  margin: 0 10px 1em;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  opacity: 0.7;
+}
+
+li:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.volute-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.volute-container .reverse {
+  transform: rotate(180deg);
+}
+
+.volute-container::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 1px;
+  background-color: black;
+  top: 25px;
+  z-index: -1;
+  right: 90px;
+}
+
+.volute-container::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 1px;
+  background-color: black;
+  top: 25px;
+  z-index: -1;
+  left: 90px;
+}
+
+.volute {
+  position: relative;
+  padding: 0 10px;
+  height: 45px;
+}
+
+.photo-gallery {
+  position: absolute;
+  width: 25%;
+  height: auto;
+}
+
+.photo-gallery::after {
+  content: "";
+  position: absolute;
+  height: 1800px;
+  width: 40px;
+  top: 0;
+  right: -32px;
+  z-index: 2;
+  background-image: url('../images/border.png');
+}
+
+.photo-gallery .photo {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 3;
+}
+
+.content {
+  position: absolute;
+  padding: 40px 30px;
+  right: 0;
+  width: 75%;
+  max-height: 1800px;
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+/* SECTION - MAIN TITLE *******************************************************/
+
+.main-title {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.annoucement {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.dots {
+  width: 80px;
+  height: 2px;
+  margin: 0 auto 30px;
+}
+
+.annoucement .detail-1 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: 'Amatica+SC';
+  font-size: 1.9em;
+}
+
+.annoucement .detail-2 {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-family: 'Rye', cursive;
+  font-size: 2.2rem;
+}
+
+/* SECTION - STORY ************************************************************/
+
+.section-story {
+  margin: 60px auto 0;
+}
+
+/* SECTION - CEREMONY *********************************************************/
+
+.section-ceremony {
+  margin: 60px auto 0;
+}
+
+/* SECTIONS *******************************************************************/
+
+.section {
+  margin: 60px auto 0;
 }
