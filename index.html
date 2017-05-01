@@ -275,13 +275,25 @@
         <form action="https://formspree.io/da.schwendinger@gmail.com"
             method="POST">
 
-          <label>First name</label>
+          <label>Name</label>
           <input type="text" name="fname">
 
-          <label>Last name</label>
+          <label>Vorname</label>
           <input type="text" name="lname">
 
-          <label>Number of adults attending</label>
+          <label>Ja, ich komme zur Hochzeitsfeier!<label>
+          <select type="number" name="showing_up">
+            <option>Ja</option>
+            <option>Nein</option>
+          </select>
+
+          <label>Ich möchte <b>nur</b> zur Zeremonie und zum Apéro kommen, nicht für das Dinner und die Party<label>
+          <select type="number" name="showing_option">
+            <option>Nur Zeremonie und Apéro</option>
+            <option>Gesamte Hochzeitsfeier</option>
+          </select>
+
+          <label>Anzahl Erwachsen</label>
           <select type="number" name="adults">
             <option>1</option>
             <option>2</option>
@@ -289,7 +301,7 @@
             <option>4</option>
           </select>
 
-          <label>Number of children attending</label>
+          <label>Anzahl Kinder</label>
           <select type="number" name="children">
             <option>0</option>
             <option>1</option>
@@ -298,60 +310,48 @@
             <option>4</option>
           </select>
 
-          <label>If yes, how old are your children?</label>
+          <label>Alter der Kinder</label>
           <textarea type="text" name="chilren_age" /></textarea>
 
-          <label>Yes I'm coming to your wedding!<label>
-          <select type="number" name="showing_up">
-            <option>Yes</option>
-            <option>Nope</option>
-          </select>
-
-          <label>I want to come <strong>only</strong> for the ceremony and the apéritive, not for dinner and party.<label>
-          <select type="number" name="showing_option">
-            <option>Only ceremony & apéritive</option>
-            <option>Whole wedding</option>
-          </select>
-
-          <label>Yes, we are happy to party through the night or sleep in the dorm on site and have breakfast with view on the lake Zurich the next morning</label>
+          <label>Ja, wir möchten die Nacht mit euch durchfeiern oder im Schlafsaal vor Ort schlafen um am nächsten Morgen mit Blick auf den Zürichsee zu frühstücken</label>
           <select type="number" name="sleep">
-            <option>Yes</option>
-            <option>Nope</option>
+            <option>Ja</option>
+            <option>Nein</option>
           </select>
 
-          <label>We want to stay at the hotel, please check for group rates for us</label>
+          <label>Wir möchten im Hotel übernachten, bitte erkundigt euch nach Gruppenrabetten für uns</label>
           <select type="number" name="hostel">
-            <option>Yes</option>
-            <option>Nope</option>
+            <option>Ja</option>
+            <option>Nein</option>
           </select>
 
-          <label>We organize our own accomodation</label>
+          <label>Wir kümmern uns selbst um die Unterkunft</label>
           <select type="number" name="own_accomation">
-            <option>Yes</option>
-            <option>Nope</option>
+            <option>Ja</option>
+            <option>Nein</option>
           </select>
 
-          <label>We come by car</label>
+          <label>Wir kommen mit dem Auto</label>
           <select type="number" name="transport">
-            <option>Yes</option>
-            <option>Nope</option>
+            <option>Ja</option>
+            <option>Nein</option>
           </select>
 
-          <label>We would need a lift from:</label>
+          <label>Wir brauchen eine Mitfahrgelegenheit von:</label>
           <select type="number" name="lift">
-            <option>No need</option>
+            <option>Nicht benötigt</option>
             <option>Einsiedeln</option>
             <option>Schindellegi</option>
             <option>Wädenswil</option>
           </select>
 
-          <label>We have the following food restrictions: (lactose free, gluten free, vegan, other allergies)</label>
+          <label>Bei uns gibt es die folgenden Ernährungseinschränkungen: (lactosfrei, glutenfrei, vegan, andere Allergien)</label>
           <textarea type="text" name="food_restrictions" /></textarea>
 
-          <label>I want to contribute with a presentation, speech, etc... Please give my contact information to the bridesmaids, because i will - for sure - forget about it myself.</label>
+          <label>Ich möchte mich mit einer Präsentation, einer Rede, etc... beteiligen. Bitte gebt meine Kontaktinformationen an die Brautjungfern weiter, da ich es sonst – natürlich – vergessen würde mich bei ihnen zu melden</label>
           <select type="number" name="contribution">
-            <option>Yes</option>
-            <option>Nope</option>
+            <option>Ja</option>
+            <option>Nein</option>
           </select>
 
           <input type="hidden" name="_next" value="https://www.wirfeiernhochzeit.com/thanks" />
