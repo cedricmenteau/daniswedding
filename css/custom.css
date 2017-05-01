@@ -284,7 +284,7 @@ nav {
   background-color: black;
   top: 25px;
   z-index: -1;
-  right: 90px;
+  right: calc(50% + 150px);
 }
 
 .volute-container::after {
@@ -295,7 +295,16 @@ nav {
   background-color: black;
   top: 25px;
   z-index: -1;
-  left: 90px;
+  left: calc(50% + 150px);
+}
+
+@media (max-width: 967px) {
+  .volute-container::before {
+    width: 80px;
+  }
+  .volute-container::after {
+    width: 80px;
+  }
 }
 
 @media (max-width: 510px) {
@@ -409,6 +418,24 @@ nav {
 
 .section-story {
   margin: 60px auto 0;
+}
+
+.story-pics {
+  display: none;
+}
+
+.story-pics img {
+  max-width: 100%;
+  min-width: 335px;
+  max-height: 225px;
+  margin: 0 auto 10px;
+}
+
+@media (max-width: 1099px) {
+  .story-pics {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* SECTION - CEREMONY *********************************************************/
