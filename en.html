@@ -24,6 +24,10 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
 
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/smooth-scroll.js"></script>
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -44,14 +48,14 @@
 
     <nav>
       <ul>
-        <li><a href="#story">Our story</a></li>
-        <li><a href="#ceremony">Ceremony & Party</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#info">Informations</a></li>
-        <li><a href="#location">Location & Travel</a></li>
-        <li><a href="#gifts">Gifts</a></li>
-        <li><a href="#rsvp">RSVP</a></li>
-         <li><a href="#fotos">Fotos</a></li>
+        <li><a data-scroll href="#story">Our story</a></li>
+        <li><a data-scroll href="#ceremony">Ceremony & Party</a></li>
+        <li><a data-scroll href="#contact">Contact</a></li>
+        <li><a data-scroll href="#info">Informations</a></li>
+        <li><a data-scroll href="#location">Location & Travel</a></li>
+        <li><a data-scroll href="#gifts">Gifts</a></li>
+        <li><a data-scroll href="#rsvp">RSVP</a></li>
+        <li><a data-scroll href="#fotos">Fotos</a></li>
       </ul>
     </nav>
 
@@ -201,7 +205,7 @@
       <div class="row">
         <h2>Location & Travel information</h2>
         <p><i style="font-size: 1.4em;">Ferienheim Mistlibühl, 8825 Hütten, Schweiz</i><br>Please indicate your travelling mode in the RSVP, so we can organize shuttles, if needed.</p>
-        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtRuZeQQipdde_CMId7Y28fwSXWgMMZcU&callback=initMap" type="text/javascript"></script>
         <div style='overflow:hidden;height:440px;width:100%; margin-bottom: 60px;'>
           <div id='gmap_canvas' style='height:440px;width:100%;'></div>
           <script type='text/javascript'>function init_map(){var myOptions = {zoom:10, scrollwheel:false,navigationControl:true, mapTypeControl:false, zoomControl: true, scaleControl:false, draggable:true, styles:[{"featureType":"road","elementType":"geometry","stylers":[{ "lightness": 100 },{"visibility":"simplified"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#FFFAF0"}]},{"featureType":"water","stylers":[{"color":"#d9edf7"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"lightness":40}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"visibility":"on","color":"#c5dac6"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#CCAA88"},{"lightness":40}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#EEEEEE"}]},{"featureType":"road","stylers":[{"visibility":"simplified"},{"color":"#FF0000"},{"gamma":9}]},{"featureType":"road.highway","stylers":[{"visibility":"on"},{"color":"#FF0000"},{"gamma":8}]},{"featureType":"road.highway.controlled_access","stylers":[{"visibility":"on"},{"color":"#FF0000"},{"gamma":4}]},{"featureType": "road","elementType": "labels","stylers": [{ "visibility": "on" }]},{"featureType":"poi.business ","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"poi.government","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#DDDDDD"}]},{"featureType":"transit.station","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#CCCCCC"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#AAAAAA"},{"gamma":4}]}],center:new google.maps.LatLng(47.168710, 8.678152),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.168710, 8.678152)});}google.maps.event.addDomListener(window, 'load', init_map);</script>
@@ -344,6 +348,12 @@
     </div>
 
   </div>
+
+  <!-- INTIT - JS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+    smoothScroll.init();
+  </script>
 
 
 <!-- End Document

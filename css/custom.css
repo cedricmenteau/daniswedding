@@ -201,11 +201,12 @@ nav {
 .content {
   position: absolute;
   padding: 40px 30px;
+  height: 1800px;
   right: 0;
   width: 75%;
-  max-height: 1800px;
-  overflow: scroll;
   box-sizing: border-box;
+  z-index: 1;
+  overflow: scroll;
 }
 
 @media (max-width: 767px) {
