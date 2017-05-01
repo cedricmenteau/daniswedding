@@ -49,6 +49,12 @@ h2 {
   font-size: 3.2rem;
 }
 
+@media (max-width: 520px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
 h3 {
   font-family: 'Rye', cursive;
   font-size: 1.6em;
@@ -354,6 +360,12 @@ nav {
   }
 }
 
+@media (max-width: 520px) {
+  .content {
+    padding: 75px 0;
+  }
+}
+
 /* SECTION - MAIN TITLE *******************************************************/
 
 .main-title {
@@ -378,6 +390,12 @@ nav {
   text-transform: uppercase;
   font-family: 'Amatica SC', cursive;
   font-size: 2.9em;
+}
+
+@media (max-width: 520px) {
+  .annoucement .detail-1 {
+    font-size: 1.9em;
+  }
 }
 
 .annoucement .detail-2 {
