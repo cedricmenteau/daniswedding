@@ -429,7 +429,7 @@ nav {
   flex-direction: column;
   align-items: center;
   padding: 0 10px;
-  margin: 0 1% 30px;
+  margin: 0 auto 30px;
   width: 225px;
   box-sizing: border-box;
 }
@@ -469,7 +469,7 @@ nav {
   }
 
   .location-details img {
-    height: auto;
+    max-height: auto;
     margin: 0 0 20px 0;
   }
 }
