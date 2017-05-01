@@ -46,6 +46,16 @@
 
   <div class="content">
 
+    <div class="nav-overlay hidden"></div>
+
+    <div class="menu-icon">
+      <div class="hamburger" id="hamburger-1">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+
     <nav>
       <ul>
         <li><a data-scroll href="#story">Our story</a></li>
@@ -353,5 +363,31 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript">
+    // TOGGLE NAVBAR STATE ON SCROLL
+    $(document).ready(function(){
+      $('.menu-icon').click(function(e) {
+        $(this).toggleClass('opened');
+        $('.hamburger').toggleClass('is-active');
+        $('.nav-overlay').toggleClass('hidden');
+        $('nav').toggleClass('nav-opened');
+        e.preventDefault() /*ignores actual link*/
+      });
+
+      $('.nav-overlay').click(function(e) {
+        $(this).toggleClass('hidden');
+        $('.menu-icon').toggleClass('opened');
+        $('.hamburger').toggleClass('is-active');
+        $('nav').toggleClass('nav-opened');
+      });
+
+      $('nav ul li a').click(function(e) {
+        $('.nav-overlay').toggleClass('hidden');
+        $('.menu-icon').toggleClass('opened');
+        $('.hamburger').toggleClass('is-active');
+        $('nav').toggleClass('nav-opened');
+      });
+    });
+  </script>
 </body>
 </html>
