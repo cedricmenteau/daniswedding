@@ -118,6 +118,11 @@ nav {
   right: 20px;
 }
 
+.local img {
+  width: 25px;
+  height: 25px;
+}
+
 .active {
   opacity: 0.4;
 }
